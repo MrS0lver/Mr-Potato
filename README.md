@@ -32,8 +32,15 @@ Survive as long as you can.
 
 ## 📸 Screenshots
 
-![Mr. Potato Gameplay](https://img.itch.zone/aW1hZ2UvMjI2Mzg4NS8xMzM4NTk2MC5wbmc=/original/LfNzPo.png)
-*Dodge meteors, shoot enemies, and survive as long as possible!*
+
+![Screenshot 2025-04-08 210648](https://github.com/user-attachments/assets/81b58c29-0ca7-4174-9e08-51c6f159187d)
+
+
+![Screenshot 2025-04-08 210719](https://github.com/user-attachments/assets/ee985d5a-f7c0-45bf-b1f7-87ec595a4685)
+
+![Screenshot 2025-04-08 210737](https://github.com/user-attachments/assets/50755a36-57fe-4140-9877-361ffdb4bfbb)
+
+!Dodge meteors, shoot enemies, and survive as long as possible!*
 
 ---
 
