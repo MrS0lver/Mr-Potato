@@ -44,6 +44,9 @@ Survive as long as you can.
 
 ---
 
+![0408](https://github.com/user-attachments/assets/4dc5bc8c-8047-4bf7-b8a5-bba75774322f)
+
+
 ## 🌟 Can You Survive?
 
 Your **score = survival time** — every second counts.  
