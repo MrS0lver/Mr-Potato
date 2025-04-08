@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://013n54tekkvu"]
+
+[ext_resource type="Script" uid="uid://bbprfi3mgf8ga" path="res://Scripts/joy_stick.gd" id="1_b5l6o"]
+[ext_resource type="Texture2D" uid="uid://b80dci8lmvh0w" path="res://JoyStick/SmallHandleFilledGrey.png" id="2_tdkmx"]
+[ext_resource type="Script" uid="uid://bjebpwjj7b0q7" path="res://Scripts/middle.gd" id="3_of4or"]
+[ext_resource type="Texture2D" uid="uid://coki2u8tsebir" path="res://JoyStick/Joystick.png" id="4_4jf82"]
+
+[node name="JoyStick" type="Node2D"]
+script = ExtResource("1_b5l6o")
+
+[node name="Middle" type="Sprite2D" parent="."]
+scale = Vector2(0.74, 0.74)
+texture = ExtResource("2_tdkmx")
+script = ExtResource("3_of4or")
+
+[node name="Stick" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, 1.90735e-06)
+scale = Vector2(0.766667, 0.793333)
+texture = ExtResource("4_4jf82")
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -152.0
+offset_top = -152.0
+offset_right = 152.0
+offset_bottom = 152.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="Button" to="Middle" method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="Middle" method="_on_button_button_up"]

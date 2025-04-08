@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://i4bsn1ugwd4o"]
+
+[ext_resource type="AudioStream" uid="uid://rh5g2xs2p4k7" path="res://Sounds/Destroy.mp3" id="1_8d2af"]
+
+[node name="RockBreak" type="Node2D"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_8d2af")

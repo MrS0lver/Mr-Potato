@@ -1,0 +1,137 @@
+[gd_scene load_steps=21 format=3 uid="uid://dg0nytx7tsudl"]
+
+[ext_resource type="Texture2D" uid="uid://c6uja18seqq2q" path="res://Player PILL/PILL.png" id="1_i4n5x"]
+[ext_resource type="Script" uid="uid://dlsevgh4bpnrv" path="res://Scripts/player_pill.gd" id="1_lebqe"]
+[ext_resource type="Script" uid="uid://c0jvkes30bguc" path="res://Scripts/player_gun.gd" id="2_offgv"]
+[ext_resource type="Texture2D" uid="uid://hwgu3ukfm4st" path="res://Player GUN/GUN.png" id="3_8baqt"]
+[ext_resource type="Script" uid="uid://5lwighd4ipwf" path="res://Scripts/eye.gd" id="4_xgtfp"]
+[ext_resource type="Texture2D" uid="uid://ckx0edg354183" path="res://Player EYE/EYE.png" id="5_lebqe"]
+[ext_resource type="Script" uid="uid://c3kenvmy3vwxd" path="res://Scripts/eye_2.gd" id="6_rsrnd"]
+[ext_resource type="Texture2D" uid="uid://3itl1811y5lt" path="res://Bullet/6_1.png" id="7_rsrnd"]
+[ext_resource type="AudioStream" uid="uid://itj2eiw23o6h" path="res://Sounds/SHOOT.mp3" id="9_jqyh8"]
+[ext_resource type="Texture2D" uid="uid://bvt1cgstw5i3l" path="res://Health/HURT.png" id="10_sliyu"]
+[ext_resource type="AudioStream" uid="uid://bf5xdgpik1d0w" path="res://Sounds/Break.mp3" id="11_6wvyd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xgtfp"]
+radius = 43.0
+height = 158.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jqyh8"]
+atlas = ExtResource("7_rsrnd")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sliyu"]
+atlas = ExtResource("7_rsrnd")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wvyd"]
+atlas = ExtResource("7_rsrnd")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ck5iw"]
+atlas = ExtResource("7_rsrnd")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rr057"]
+atlas = ExtResource("7_rsrnd")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25v2u"]
+atlas = ExtResource("7_rsrnd")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dxdeq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jqyh8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sliyu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6wvyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ck5iw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rr057")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25v2u")
+}],
+"loop": false,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jqyh8"]
+radius = 44.0
+height = 162.0
+
+[node name="Player PILL" type="CharacterBody2D"]
+script = ExtResource("1_lebqe")
+
+[node name="PILL IMG" type="Sprite2D" parent="."]
+position = Vector2(0.0625066, -30)
+scale = Vector2(0.799107, 0.516667)
+texture = ExtResource("1_i4n5x")
+
+[node name="SHAPE" type="CollisionShape2D" parent="."]
+position = Vector2(0, -30)
+shape = SubResource("CapsuleShape2D_xgtfp")
+
+[node name="EYE" type="Node2D" parent="."]
+position = Vector2(-19, -64)
+script = ExtResource("4_xgtfp")
+
+[node name="EYE IMG" type="Sprite2D" parent="EYE"]
+scale = Vector2(0.244048, 0.240132)
+texture = ExtResource("5_lebqe")
+
+[node name="EYE2" type="Node2D" parent="."]
+position = Vector2(17, -65)
+script = ExtResource("6_rsrnd")
+
+[node name="EYE IMG" type="Sprite2D" parent="EYE2"]
+scale = Vector2(0.244048, 0.240132)
+texture = ExtResource("5_lebqe")
+
+[node name="Player GUN" type="Node2D" parent="."]
+script = ExtResource("2_offgv")
+
+[node name="BULLET OCCUR" type="Marker2D" parent="Player GUN"]
+position = Vector2(122, -9)
+
+[node name="Shoot Animation" type="AnimatedSprite2D" parent="Player GUN/BULLET OCCUR"]
+position = Vector2(18, 1)
+scale = Vector2(1.32292, 1.38542)
+sprite_frames = SubResource("SpriteFrames_dxdeq")
+frame = 5
+frame_progress = 1.0
+
+[node name="GUN" type="Sprite2D" parent="Player GUN"]
+position = Vector2(38, 2)
+scale = Vector2(0.518056, 0.52381)
+texture = ExtResource("3_8baqt")
+
+[node name="GUN SHOOT" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_jqyh8")
+
+[node name="HEALTH" type="Area2D" parent="."]
+
+[node name="SHAPE HEALTH" type="CollisionShape2D" parent="HEALTH"]
+position = Vector2(0, -29)
+shape = SubResource("CapsuleShape2D_jqyh8")
+
+[node name="Hurt" type="Sprite2D" parent="."]
+position = Vector2(-7, -149)
+scale = Vector2(0.225, 0.245)
+texture = ExtResource("10_sliyu")
+
+[node name="Hurt SOUND" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_6wvyd")
+autoplay = true
+
+[connection signal="area_entered" from="HEALTH" to="." method="_on_health_area_entered"]

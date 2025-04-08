@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://egn4dbvbxxjg"]
+
+[ext_resource type="Script" uid="uid://bqthijsaqm4il" path="res://Scripts/level.gd" id="1_k5f4k"]
+[ext_resource type="PackedScene" uid="uid://dg0nytx7tsudl" path="res://Scenes/player_pill.tscn" id="1_tumq0"]
+[ext_resource type="Texture2D" uid="uid://b5fc5a0hbvlg6" path="res://BG.jpg" id="2_6phgx"]
+[ext_resource type="PackedScene" uid="uid://3s7sq4aw2xsd" path="res://Scenes/ui.tscn" id="4_81xng"]
+[ext_resource type="AudioStream" uid="uid://b27mld8p4jxs3" path="res://Sounds/BM.mp3" id="5_wqkje"]
+[ext_resource type="PackedScene" uid="uid://013n54tekkvu" path="res://Scenes/joy_stick.tscn" id="6_0f350"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k5f4k"]
+size = Vector2(1184, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6phgx"]
+size = Vector2(24, 680)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_81xng"]
+size = Vector2(18, 682)
+
+[node name="LEVEL" type="Node2D"]
+script = ExtResource("1_k5f4k")
+
+[node name="JoyStick" parent="." instance=ExtResource("6_0f350")]
+position = Vector2(144, 456)
+
+[node name="Player PILL" parent="." instance=ExtResource("1_tumq0")]
+position = Vector2(583, 286)
+
+[node name="Meteor" type="Node2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+autostart = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(576, -9)
+shape = SubResource("RectangleShape2D_k5f4k")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-12, 324)
+shape = SubResource("RectangleShape2D_6phgx")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(576, 655.5)
+shape = SubResource("RectangleShape2D_k5f4k")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1161, 323)
+shape = SubResource("RectangleShape2D_81xng")
+
+[node name="UI" parent="." instance=ExtResource("4_81xng")]
+
+[node name="BG" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_wqkje")
+autoplay = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(600, 344)
+scale = Vector2(1.38372, 1.48844)
+texture = ExtResource("2_6phgx")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
