@@ -51,13 +51,6 @@ Will you crumble like a baked potato or rise as the **legendary spud warrior**?
 
 ---
 
-## 🧑‍💻 Credits
-
-- **Dev & Chaos Chef**: [sud0ku](https://sud0ku.itch.io)
-- Powered by **Unity**, fueled by **caffeine and carbs**
-
----
-
 ## 💬 Feedback? Bugs? Potato jokes?
 
 I’d love to hear from you!  
