@@ -1,77 +1,62 @@
-# 🥔 Mr. Potato
+# 🥔🔫 Mr. Potato - A Fast-Paced Top-Down Shooter!
 
-A charming little experiment in absurdity and expression — create your very own Potato Persona in this bizarre yet delightful customization toy.
+**Get ready for explosive potato action!**  
+**Mr. Potato** is a wild, action-packed **top-down shooter** where you play as a fearless spud with a gun, taking on relentless waves of enemies in a meteor-filled battlefield.
 
-[Play on itch.io](https://sud0ku.itch.io/mr-potato)
+Survive as long as you can.  
+**Shoot fast. Dodge hard. Be the ultimate spud warrior.**
 
----
-
-## 🎮 What is Mr. Potato?
-
-**Mr. Potato** is a quirky browser-based experience where you can mix and match different facial features and accessories to bring your perfect (or most chaotic) potato to life. Think Mr. Potato Head meets surrealist art.
-
-There’s no goal. No timer. No stress. Just you, a potato, and your imagination.
+[🎮 Play Now on itch.io](https://sud0ku.itch.io/mr-potato)
 
 ---
 
-## ✨ Features
+## 🚀 Game Features
 
-- 🧠 Drag-and-drop interface
-- 🎩 A variety of hats, eyes, mouths, and more
-- 💾 Snapshot your creations with screenshots
-- 😂 Endless opportunities for hilarious and horrifying spud designs
-- 🍟 Totally free & playable in-browser
-
----
-
-## 📸 Screenshots
-
-![Mr. Potato Screenshot 1](https://img.itch.zone/aW1hZ2UvMjI2Mzg4NS8xMzM4NTk2MC5wbmc=/original/LfNzPo.png)
-![Mr. Potato Screenshot 2](https://img.itch.zone/aW1hZ2UvMjI2Mzg4NS8xMzM4NTk1Ny5wbmc=/original/Mr7B3%2F.png)
+- 🎮 **Smooth Controls** – Classic WASD movement combined with fluid mouse aiming.
+- 🎯 **Gun Follows Cursor** – The gun rotates dynamically with your mouse for satisfying, precision shooting.
+- 🔫 **Bullet Direction Based on Gun Angle** – Adds a skillful twist: bullets travel in the direction your gun faces, not just towards your cursor!
+- 👾 **Enemies & Challenges** – Face wave after wave of dangerous foes in a fast-paced potato-powered battle zone.
+- 🪐 **Meteor Dodging** – Survival isn’t just about shooting — keep your eye on the sky and dodge incoming meteor strikes!
 
 ---
 
 ## 🕹️ Controls
 
-| Action              | How to Do It       |
-|---------------------|--------------------|
-| Drag a face part    | Click and drag     |
-| Place on potato     | Release mouse      |
-| Remove part         | Drag off-screen    |
-| Screenshot          | Use your OS tools  |
+| Action    | Keys/Mouse         |
+|-----------|--------------------|
+| Move      | `W` `A` `S` `D`     |
+| Aim       | Mouse Movement     |
+| Shoot     | Left Mouse Button  |
 
 ---
 
-## 📦 Tech Stack
+## 📸 Screenshots
 
-- Made with **Unity**
-- Hosted on **itch.io**
-- Art and assets are custom, cute, and chaotic
-
----
-
-## 🧑‍🎨 Credits
-
-- **Developer & Designer**: [sud0ku](https://sud0ku.itch.io)
-- 🍠 Special thanks to friends who laughed at my potatoes
+![Mr. Potato Gameplay](https://img.itch.zone/aW1hZ2UvMjI2Mzg4NS8xMzM4NTk2MC5wbmc=/original/LfNzPo.png)
+*Dodge meteors, shoot enemies, and survive as long as possible!*
 
 ---
 
-## ❓ FAQ
+## 🌟 Can You Survive?
 
-**Q: Can I play this on mobile?**  
-A: It’s best experienced on a desktop browser for full drag-and-drop fun!
-
-**Q: Is this a game?**  
-A: Kind of. It's more like an interactive art toy.
+Your **score = survival time** — every second counts.  
+Will you crumble like a baked potato or rise as the **legendary spud warrior**?
 
 ---
 
-## 📣 Feedback
+## 🧑‍💻 Credits
 
-Have suggestions or potato puns? Reach out via [my itch.io page](https://sud0ku.itch.io) — I’d love to see your best spud creations!
+- **Dev & Chaos Chef**: [sud0ku](https://sud0ku.itch.io)
+- Powered by **Unity**, fueled by **caffeine and carbs**
 
 ---
 
-> “Some men just want to watch the potato burn.” – You, probably.
+## 💬 Feedback? Bugs? Potato jokes?
+
+I’d love to hear from you!  
+Drop your thoughts and high scores on [my itch.io page](https://sud0ku.itch.io).
+
+---
+
+> “In a world full of fries... be the loaded potato.” 🥔💥
 
