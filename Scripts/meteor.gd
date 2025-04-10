@@ -6,7 +6,7 @@ var direction_x : int
 
 func _ready() -> void:
 	var rand = RandomNumberGenerator.new()
-	var path : String = "res://Meteors/Meteor ("+ str(rand.randi_range(1,20)) +").png"
+	var path : String = "res://Meteors/Meteor ("+ str(rand.randi_range(1,14)) +").png"
 	$"Meteor IMG".texture = load(path) 
 	var width = get_viewport().get_visible_rect().size[0] #Getting the  display size dynamically
 	var random_x = rand.randi_range(0,width)
