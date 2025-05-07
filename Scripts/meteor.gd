@@ -20,8 +20,6 @@ func _process(delta: float) -> void:
 	rotation += rotation_speed * delta
 	position += Vector2(direction_x,1.0) * speed * delta
 
-
-
 func _on_area_entered(area: Area2D) -> void:
 	area.queue_free()
 	queue_free()

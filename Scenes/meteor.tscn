@@ -1,6 +1,5 @@
-[gd_scene load_steps=5 format=3 uid="uid://b31ehne57o2no"]
+[gd_scene load_steps=4 format=3 uid="uid://b31ehne57o2no"]
 
-[ext_resource type="Texture2D" path="res://Meteors/Meteor (2).png" id="1_5civa"]
 [ext_resource type="Script" uid="uid://dml58hu3k0dih" path="res://Scripts/meteor.gd" id="1_wm1ig"]
 [ext_resource type="AudioStream" uid="uid://rh5g2xs2p4k7" path="res://Sounds/Destroy.mp3" id="3_bgiwl"]
 
@@ -12,7 +11,6 @@ collision_mask = 6
 script = ExtResource("1_wm1ig")
 
 [node name="Meteor IMG" type="Sprite2D" parent="."]
-texture = ExtResource("1_5civa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_wm1ig")
